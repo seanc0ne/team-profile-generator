@@ -131,7 +131,7 @@ const engineerQuestions = () => {
                 let data = render(employeeArr);
                 fs.writeFile(distPath, data, (err) => {
                     if (err) throw err;
-                    console.log('The file has been saved!');
+                    console.log('The file has been saved.');
                 });
             }
         })
@@ -180,7 +180,7 @@ const managerQuestions = () => {
                 let data = render(employeeArr);
                 fs.writeFile(distPath, data, (err) => {
                     if (err) throw err;
-                    console.log('The file has been saved!');
+                    console.log('The file has been saved.');
                 });
             }
         })
