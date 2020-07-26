@@ -5,8 +5,8 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const DIST_DIR = path.resolve(__dirname, "dist");
+const distPath = path.join(DIST_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
@@ -81,7 +81,7 @@ const internQuestions = () => {
                 initialQuestion();
             } else {
                 let data = render(employeeArr);
-                fs.writeFile(outputPath, data, (err) => {
+                fs.writeFile(distPath, data, (err) => {
                     if (err) throw err;
                     console.log('The file has been saved.');
                 });
@@ -129,7 +129,7 @@ const engineerQuestions = () => {
                 initialQuestion();
             } else {
                 let data = render(employeeArr);
-                fs.writeFile(outputPath, data, (err) => {
+                fs.writeFile(distPath, data, (err) => {
                     if (err) throw err;
                     console.log('The file has been saved!');
                 });
@@ -178,7 +178,7 @@ const managerQuestions = () => {
                 initialQuestion();
             } else {
                 let data = render(employeeArr);
-                fs.writeFile(outputPath, data, (err) => {
+                fs.writeFile(distPath, data, (err) => {
                     if (err) throw err;
                     console.log('The file has been saved!');
                 });
