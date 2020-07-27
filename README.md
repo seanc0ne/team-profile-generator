@@ -6,22 +6,9 @@
 
 ## Description
 
-This README generator is a a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. The application is invoked by using the following command:
+This Team Profile Generator is a command-line application that dynamically generates a team profile from a user's input using the Inquirer package. The user is prompted for information about their team, and a webpage displaying the user's team's basic information is created for quick access to email addresses and GitHub profiles.
 
-```
-node index.js
-```
-
-The user is prompted for information about their application repository, and a high-quality, professional README.md is generated with the title of their project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests and Questions.
-
-## Table of Contents
-
-* [Installation](#Installation)
-* [Tests](#Tests)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Questions](#Questions)
+![ScreenShot](screenshot.png)
 
 ## Installation
 
@@ -39,9 +26,15 @@ To run tests run:
 npm run test
 ```
 
+This Team Profile Generator uses Jest to run unit tests.
+
 ## Usage
 
-Feel free to clone or fork this repo.
+Use the app by downloading it, and run it by typing the following on the command line:
+```
+node index.js
+```
+You will be prompted to select whether the employee is a Manager, Engineer or Intern. Once you have made the selection, you will be prompted to answer a few more questions and then asked if you would like to add more employees. Add as many as you like.
 
 ## License
 
